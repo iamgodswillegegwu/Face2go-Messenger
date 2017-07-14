@@ -1,19 +1,35 @@
-# Build and Release Folders
-bin/
-bin-debug/
-bin-release/
-[Oo]bj/ # FlashDevelop obj
-[Bb]in/ # FlashDevelop bin
+#do not push settings files
+/configurations/ossn.config.db.php
+/configurations/ossn.config.site.php
 
-# Other files and folders
-.settings/
+#do not include following files
+/components/*
+/cache
+/installation/INSTALLED
+/.htaccess
+Thumbs.db
+Desktop.ini
 
-# Executables
-*.swf
-*.air
-*.ipa
-*.apk
+#do not ignore ossn core components
+!/components/OssnAds
+!/components/OssnBlock
+!/components/OssnComments
+!/components/OssnEmbed
+!/components/OssnGroups
+!/components/OssnInvite
+!/components/OssnLikes
+!/components/OssnMessages
+!/components/OssnNotifications
+!/components/OssnPhotos
+!/components/OssnPoke
+!/components/OssnProfile
+!/components/OssnSearch
+!/components/OssnSitePages
+!/components/OssnSmilies
+!/components/OssnWall
+!/components/OssnChat
 
-# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
-# should NOT be excluded as they contain compiler settings and other important
-# information for Eclipse / Flash Builder.
+#do not ignore config files
+!/.scrutinizer.yml
+!/.travis.yml
+!.gitignore
